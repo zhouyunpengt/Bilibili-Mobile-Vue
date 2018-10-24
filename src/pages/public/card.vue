@@ -3,8 +3,8 @@
     <div class="card">
       <img :src="img" width="95%">
       <div>
-        <img src="@/assets/icon/play.png" width="40"><span>{{play}}</span>
-        <img src="@/assets/icon/danmaku.png" width="40"><span>{{danmaku}}</span>
+        <img src="@/assets/icon/play.png" width="8%"><span>{{play}}</span>
+        <img src="@/assets/icon/danmaku.png" width="8%"><span>{{danmaku}}</span>
       </div>
       <p>{{title}}</p>
     </div>
@@ -24,22 +24,21 @@ export default {
       default: ''
     },
     play: {
-      type: Number,
-      default: 0
+      type: String,
+      default: '0'
     },
     danmaku: {
-      type: Number,
-      default: 0
+      type: String,
+      default: '0'
     }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .card {
   width: 47.5%;
   height: 6.5rem;
-  padding-bottom: .5rem;
   text-align: center;
   float: left;
   img {

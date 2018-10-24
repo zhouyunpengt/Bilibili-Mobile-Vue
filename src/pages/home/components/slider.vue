@@ -26,9 +26,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .slider {
   width: 100%;
+  padding-bottom: .25rem;
   img {
     width: 95%;
     border-radius: .7rem;
